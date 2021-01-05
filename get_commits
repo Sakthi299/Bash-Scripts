@@ -1,0 +1,7 @@
+git init
+echo "Enter git url"
+read url
+git remote add origin $url
+git fetch
+git remote set-head origin -a
+git rev-list origin/HEAD --count
